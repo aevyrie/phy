@@ -7,3 +7,13 @@ edition = "2021"
 
 [dependencies]
 glam = "0.20"
+rayon = "1.5"
+hashbrown = "0.12"
+
+[dev-dependencies]
+bevy = "0.7"
+criterion = { version = "0.3", features = ["html_reports"] }
+
+[[bench]]
+name = "benches"
+harness = false

@@ -11,6 +11,9 @@ mod tests;
 pub mod constraints;
 pub mod particles;
 
+#[cfg(feature = "bevy_integration")]
+pub mod bevy;
+
 pub fn simulate_iteration(
     delta_t: Duration,
     substeps: usize,
